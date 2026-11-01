@@ -16,5 +16,4 @@ Geleneksel biletleme sistemlerinin ötesine geçen bu yenilikçi proje; seyahat 
 * **Geliştirme Ortamı (IDE):** Eclipse
 
 ## 📂 Proje Kurulumu ve Çalıştırma
-Repoyu bilgisayarınıza klonlayın:
 git clone https://github.com/havinng/E-Bilet.git
