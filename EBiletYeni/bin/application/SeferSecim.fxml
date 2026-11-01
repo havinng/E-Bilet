@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SeferSecimController">
+   <children>
+      <Label layoutX="26.0" layoutY="30.0" prefHeight="31.0" prefWidth="238.0" text="Gitmek İstediğiniz Rota" textFill="RED">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="87.0" prefHeight="31.0" prefWidth="254.0" text="Lütfen Sefer Seçiniz" textFill="RED">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="seferSecim_cb" layoutX="26.0" layoutY="130.0" prefHeight="26.0" prefWidth="196.0" />
+      <ListView fx:id="seferListesi_lv" layoutX="300.0" layoutY="43.0" prefHeight="328.0" prefWidth="275.0" />
+      <Button layoutX="46.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleKoltukSecim" prefHeight="38.0" prefWidth="154.0" text="Koltuk Seçimi" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

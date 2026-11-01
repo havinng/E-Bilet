@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KoltukSecimController">
+   <children>
+    
+      <Label fx:id="labelSecilenSefer" text="Seçilen Sefer: Yükleniyor..." textFill="#2c3e50" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelToplamUcret" text="Toplam Ücret: 0 TL" textFill="#27ae60" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      
+      <AnchorPane layoutX="40.0" layoutY="70.0" prefHeight="450.0" prefWidth="420.0" style="-fx-background-color: white; -fx-border-color: #dcdde1; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="25.0" layoutY="15.0" text="[ Şoför ]" textFill="#7f8c8d">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            
+            <GridPane hgap="10.0" layoutX="25.0" layoutY="50.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="45.0" prefWidth="45.0" /> 
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="45.0" prefWidth="45.0" /> 
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="45.0" prefWidth="45.0" /> 
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="45.0" prefWidth="45.0" /> 
+              </columnConstraints>
+              <children>
+                  <Button fx:id="k1" prefHeight="35.0" prefWidth="45.0" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <Button fx:id="k2" prefHeight="35.0" prefWidth="45.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Button fx:id="k3" prefHeight="35.0" prefWidth="45.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                  <Button fx:id="k4" prefHeight="35.0" prefWidth="45.0" text="4" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                  
+                  <Button fx:id="k5" prefHeight="35.0" prefWidth="45.0" text="5" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <Button fx:id="k6" prefHeight="35.0" prefWidth="45.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="k7" prefHeight="35.0" prefWidth="45.0" text="7" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button fx:id="k8" prefHeight="35.0" prefWidth="45.0" text="8" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  
+                  <Button fx:id="k9" prefHeight="35.0" prefWidth="45.0" text="9" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <Button fx:id="k10" prefHeight="35.0" prefWidth="45.0" text="10" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="k11" prefHeight="35.0" prefWidth="45.0" text="11" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="k12" prefHeight="35.0" prefWidth="45.0" text="12" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+
+                  <Button fx:id="k13" prefHeight="35.0" prefWidth="45.0" text="13" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <Button fx:id="k14" prefHeight="35.0" prefWidth="45.0" text="14" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="k15" prefHeight="35.0" prefWidth="45.0" text="15" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button fx:id="k16" prefHeight="35.0" prefWidth="45.0" text="16" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+
+                  <Button fx:id="k17" prefHeight="35.0" prefWidth="45.0" text="17" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <Button fx:id="k18" prefHeight="35.0" prefWidth="45.0" text="18" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="k19" prefHeight="35.0" prefWidth="45.0" text="19" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button fx:id="k20" prefHeight="35.0" prefWidth="45.0" text="20" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+
+                  <Button fx:id="k21" prefHeight="35.0" prefWidth="45.0" text="21" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                  <Button fx:id="k22" prefHeight="35.0" prefWidth="45.0" text="22" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button fx:id="k23" prefHeight="35.0" prefWidth="45.0" text="23" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button fx:id="k24" prefHeight="35.0" prefWidth="45.0" text="24" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+
+                  <Button fx:id="k25" prefHeight="35.0" prefWidth="45.0" text="25" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                  <Button fx:id="k26" prefHeight="35.0" prefWidth="45.0" text="26" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="k27" prefHeight="35.0" prefWidth="45.0" text="27" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Button fx:id="k28" prefHeight="35.0" prefWidth="45.0" text="28" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+
+                  <Button fx:id="k29" prefHeight="35.0" prefWidth="45.0" text="29" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                  <Button fx:id="k30" prefHeight="35.0" prefWidth="45.0" text="30" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Button fx:id="k31" prefHeight="35.0" prefWidth="45.0" text="31" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <Button fx:id="k32" prefHeight="35.0" prefWidth="45.0" text="32" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+
+                  <Button fx:id="k33" prefHeight="35.0" prefWidth="45.0" text="33" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                  <Button fx:id="k34" prefHeight="35.0" prefWidth="45.0" text="34" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Button fx:id="k35" prefHeight="35.0" prefWidth="45.0" text="35" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <Button fx:id="k36" prefHeight="35.0" prefWidth="45.0" text="36" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+
+                  <Button fx:id="k37" prefHeight="35.0" prefWidth="45.0" text="37" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                  <Button fx:id="k38" prefHeight="35.0" prefWidth="45.0" text="38" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Button fx:id="k39" prefHeight="35.0" prefWidth="45.0" text="39" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <Button fx:id="k40" prefHeight="35.0" prefWidth="45.0" text="40" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+              </children>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+
+      <AnchorPane layoutX="480.0" layoutY="70.0" prefHeight="450.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: #dcdde1; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-width: 2;">
+         <children>  
+           <CheckBox fx:id="chkBebekli" layoutX="25.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleBebekliSecim" text="Bebekli Yolcu" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            
+            <Label layoutX="25.0" layoutY="80.0" prefWidth="180.0" text="Not: Sizlerin ve diğer yolcularımızın konforu için yanınızda 0-5 yaş aralığında minik misafirlerimizi belirtin." textFill="#7f8c8d" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>   
+            <Button layoutX="25.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleDevamEt" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2c3e50; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;" text="Devam Et" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

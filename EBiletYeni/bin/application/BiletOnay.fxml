@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="820.0" style="-fx-background-color: #f8fafc;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BiletOnayController">
+   <children>
+      <VBox layoutX="50.0" layoutY="100.0" spacing="20.0" prefWidth="350.0">
+         <children>
+            <Label text="Yolcu Bilgileri" textFill="#1e293b">
+               <font><Font name="System Bold" size="24.0" /></font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <VBox spacing="8.0">
+               <Label text="Adınız" textFill="#64748b" />
+               <TextField fx:id="txtAd" prefHeight="40.0" promptText="Örn: Ahmet" style="-fx-background-radius: 8;" />
+            </VBox>
+            <VBox spacing="8.0">
+               <Label text="Soyadınız" textFill="#64748b" />
+               <TextField fx:id="txtSoyad" prefHeight="40.0" promptText="Örn: Yılmaz" style="-fx-background-radius: 8;" />
+            </VBox>
+            <VBox spacing="8.0">
+               <Label text="T.C. Kimlik No" textFill="#64748b" />
+               <TextField fx:id="txtTC" prefHeight="40.0" promptText="11 Haneli" style="-fx-background-radius: 8;" />
+            </VBox>
+         </children>
+      </VBox>
+
+      <AnchorPane layoutX="450.0" layoutY="120.0" prefHeight="350.0" prefWidth="320.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 20, 0, 0, 10);">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#1e293b" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="320.0" />
+            <Label layoutX="20.0" layoutY="18.0" text="BİLET ÖZETİ" textFill="WHITE">
+               <font><Font name="System Bold" size="18.0" /></font>
+            </Label>
+            <GridPane layoutX="30.0" layoutY="85.0" vgap="15.0" prefWidth="260.0">
+               <columnConstraints>
+                  <ColumnConstraints prefWidth="100.0" />
+                  <ColumnConstraints prefWidth="160.0" />
+               </columnConstraints>
+               <children>
+                  <Label text="Güzergah:" textFill="#94a3b8" />
+                  <Label fx:id="lblRuzergah" text="İstanbul - Ankara" textFill="#1e293b" GridPane.columnIndex="1"><font><Font name="System Bold" size="14.0"/></font></Label>
+                  
+                  <Label text="Koltuk No:" textFill="#94a3b8" GridPane.rowIndex="1" />
+                  <Label fx:id="lblKoltuk" text="12" textFill="#1e293b" GridPane.columnIndex="1" GridPane.rowIndex="1"><font><Font name="System Bold" size="14.0"/></font></Label>
+                  
+                  <Label text="Yolcu Tipi:" textFill="#94a3b8" GridPane.rowIndex="2" />
+                  <Label fx:id="lblYolcuTipi" text="Standart" textFill="#1e293b" GridPane.columnIndex="1" GridPane.rowIndex="2"><font><Font name="System Bold" size="14.0"/></font></Label>
+                  
+                  <Label text="Toplam Ücret:" textFill="#94a3b8" GridPane.rowIndex="3" />
+                  <Label fx:id="lblUcret" text="550 TL" textFill="#2563eb" GridPane.columnIndex="1" GridPane.rowIndex="3"><font><Font name="System Bold" size="18.0"/></font></Label>
+               </children>
+            </GridPane>
+            <Line endX="200.0" layoutX="60.0" layoutY="280.0" stroke="#e2e8f0" />
+            <Label layoutX="80.0" layoutY="300.0" text="İyi Yolculuklar Dileriz!" textFill="#94a3b8"><font><Font name="System Italic" size="13.0" /></font></Label>
+         </children>
+      </AnchorPane>
+
+      <Button layoutX="300.0" layoutY="530.0" onAction="#handleOnayla" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #10b981; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 12;" text="BİLETİ ONAYLA" />
+   </children>
+</AnchorPane>

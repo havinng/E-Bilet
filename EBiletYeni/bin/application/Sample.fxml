@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label layoutX="98.0" layoutY="204.0" prefHeight="18.0" prefWidth="202.0" text="           Parola" textAlignment="RIGHT" textFill="#17a61e">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email_tf" layoutX="102.0" layoutY="167.0" prefHeight="26.0" prefWidth="196.0" promptText="E-mail" />
+      <Label layoutX="120.0" layoutY="128.0" prefHeight="18.0" prefWidth="158.0" text="         E-Mail" textAlignment="CENTER" textFill="#17a61e">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="sifre_pf" layoutX="99.0" layoutY="237.0" prefHeight="26.0" prefWidth="202.0" promptText="Parola" />
+    <Button layoutX="113.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleGirisYap" prefHeight="43.0" prefWidth="171.0" text="Giriş" textFill="#17a61e">
+        <font> 
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="143.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleKayitEkraninaGit" prefHeight="43.0" prefWidth="109.0" text="Kayıt Ol" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="linkSifremiUnuttum" layoutX="135.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleSifremiUnuttum" prefHeight="26.0" prefWidth="130.0" text="Şifremi Unuttum" textFill="RED" />
+      <Label layoutX="135.0" layoutY="338.0" prefHeight="18.0" prefWidth="150.0" text="  Henüz Kayıt Olmadıysan.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

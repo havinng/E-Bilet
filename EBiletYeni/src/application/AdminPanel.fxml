@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <TableView fx:id="table_seferler" layoutX="400.0" layoutY="73.0" onMouseClicked="#handleTabloSecim" prefHeight="226.0" prefWidth="386.0">
+        <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col_kalkis" prefWidth="180.0" text="KALKIŞ" />
+            <TableColumn fx:id="col_fiyat" prefWidth="75.199951171875" text="FİYAT" />
+            <TableColumn fx:id="col_koltuk" prefWidth="91.199951171875" text="KAPASİTE" />
+        </columns>
+      </TableView>
+      <Label layoutX="65.0" layoutY="91.0" prefHeight="30.0" prefWidth="91.0" text="Kalkış">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="128.0" prefHeight="30.0" prefWidth="66.0" text="Fiyat">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="170.0" prefHeight="30.0" prefWidth="66.0" text="Kapasite">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_guncelle" layoutX="111.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleGuncelle" text="GÜNCELLE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_ekle" layoutX="237.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleEkle" prefHeight="31.0" prefWidth="65.0" text="EKLE" textFill="#24b942">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_sil" layoutX="335.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleSil" prefHeight="31.0" prefWidth="74.0" text="SİL">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_kalkis" layoutX="186.0" layoutY="94.0" />
+      <TextField fx:id="txt_fiyat" layoutX="186.0" layoutY="131.0" />
+      <TextField fx:id="txt_koltuk" layoutX="186.0" layoutY="173.0" />
+   </children>
+</AnchorPane>

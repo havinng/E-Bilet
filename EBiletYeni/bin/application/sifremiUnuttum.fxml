@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+
+   <children>
+
+      <TextField fx:id="txtEmail" layoutX="186.0" layoutY="111.0" prefHeight="26.0" prefWidth="190.0" promptText="E-mail" />
+
+      <Button fx:id="btnGonder" layoutX="239.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleSifremiUnuttum" prefHeight="26.0" prefWidth="85.0" text="Gönder" />
+
+      <Label fx:id="lblDurum" layoutX="182.0" layoutY="200.0" prefHeight="50.0" prefWidth="198.0" />
+
+   </children>
+
+</AnchorPane>
